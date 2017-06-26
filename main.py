@@ -82,8 +82,10 @@ parser.setContentHandler(Project)
 parser.parse(input_xml_full_path)
 
 #Niels Drost: Nasty hack to set climo dir to something unique for every process
-Project.project_info['GLOBAL']['climo_dir'] = Project.project_info['GLOBAL']['climo_dir'] + "-" + str(os.getpid())
-Project.project_info['GLOBAL']['wrk_dir'] = Project.project_info['GLOBAL']['wrk_dir'] + "-" + str(os.getpid())
+#Disabled, as it makes the output folder unpredicable.
+#When running multiple instances make sure to set unique climo/work/plot paths for each.
+#Project.project_info['GLOBAL']['climo_dir'] = Project.project_info['GLOBAL']['climo_dir'] + "-" + str(os.getpid())
+#Project.project_info['GLOBAL']['wrk_dir'] = Project.project_info['GLOBAL']['wrk_dir'] + "-" + str(os.getpid())
 
 # Project_info is a dictionary with all info from the namelist.
 project_info = Project.project_info
