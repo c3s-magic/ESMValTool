@@ -8,6 +8,7 @@ dependencies:
   # Python packages that cannot be installed from PyPI:
   # TODO when switching to iris 2.x, switch straight to 2.1+
   - basemap
+  - matplotlib=2.2.3
   - iris=1.13
   - python-stratify
   # Multi language support:
