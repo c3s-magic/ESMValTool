@@ -29,12 +29,12 @@ REQUIREMENTS = {
     # Use with pip install . to install from source
     'install': [
         'basemap',
-        'cartopy',
+        'cartopy==0.16.0',
         'cdo',
         'cf_units',
         'cython',
         # 'scitools-iris',  # Only iris 2 is on PyPI
-        'matplotlib',
+        'matplotlib==2.2.3',
         'netCDF4',
         'numba',
         'numpy',
